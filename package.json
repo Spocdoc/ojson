@@ -12,6 +12,7 @@
     "dependencies": {
     },
     "DEBUG local dependencies": {
-      "lodash-fork": "0.x"
+      "lodash-fork": "0.x",
+      "debug-fork": "0.x"
     }
 }

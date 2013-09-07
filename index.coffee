@@ -1,4 +1,7 @@
 {extend} = require 'lodash-fork'
+require 'json-fork' # polyfill if JSON is missing
+require 'debug-fork'
+debug = global.debug 'ojson'
 
 hasOwn = {}.hasOwnProperty
 
@@ -22,8 +25,8 @@ module.exports = class OJSON
     for o in constructors
       if typeof o is 'object'
         for name,constructor of o
+          debug "WARN: already registered [#{name}]" if @registry[name]
           constructor['_ojson'] = name
-          throw new Error("already registered [#{name}]") if current = @registry[name] and current isnt constructor
           @registry[name] = constructor
       else if o.name
         @registry[o.name] = o
