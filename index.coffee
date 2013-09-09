@@ -1,3 +1,4 @@
+require 'es5'
 {extend} = require 'lodash-fork'
 require 'json-fork' # polyfill if JSON is missing
 require 'debug-fork'

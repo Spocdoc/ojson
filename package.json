@@ -13,6 +13,7 @@
     },
     "DEBUG local dependencies": {
       "lodash-fork": "0.x",
+      "es5": "0.x",
       "debug-fork": "0.x"
     }
 }
