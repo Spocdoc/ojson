@@ -1,6 +1,6 @@
 {
     "name": "ojson",
-    "version": "0.0.0",
+    "version": "0.0.2",
     "description": "ERROR: No README.md file found!",
     "main": "index.coffee",
     "scripts": {
@@ -12,6 +12,7 @@
     "dependencies": {
       "lodash-fork": "0.x",
       "es5": "0.x",
+      "json-fork": "0.x",
       "debug-fork": "0.x"
     }
 }
